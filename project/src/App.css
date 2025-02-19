@@ -1,0 +1,195 @@
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  width: 500px;
+  height: 300px;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+.modal-content h2 {
+  margin-bottom: 10px;
+}
+
+.modal-content input {
+  width: 90%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.modal-content button {
+  margin: 5px;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.modal-content button:first-child {
+  background: #4caf50;
+  color: white;
+}
+
+.h2Task{
+  position: relative;
+  right: 210px;
+  font-size: 35px;
+  font-family: sans-serif;
+  font-weight: 600;
+}
+
+.inputone{
+  width: 100%;
+  position: relative;
+  right: 10px;
+}
+
+.inputtwo{
+  position: relative;
+  right: 10px;
+}
+
+.title{
+  position: relative;
+  right: 230px;
+  font-family: sans-serif;
+  font-size: 15px;
+}
+
+.Des{
+  position: relative;
+  right: 200px;
+  font-family: sans-serif;
+  font-size: 15px;
+}
+
+.save{
+  width: 90px;
+  height: 40px;
+  background-color: #2196F3;
+  color: white;
+  border: 0;
+  border-radius: 4px;
+  font-family: sans-serif;
+  font-size: 15px;
+  position: relative;
+  right: 148px;
+}
+
+.cancle{
+  width: 90px;
+  height: 40px;
+  background-color: #2196F3;
+  color: white;
+  border-radius: 4px;
+  font-family: sans-serif;
+  font-size: 15px;
+  position: relative;
+  right: 150px;
+}
+
+.h1Task{
+  position: relative;
+  right: 120px;
+  font-size: 35px;
+  font-family: sans-serif;
+  font-weight: 600;
+}
+
+.startone{
+  display: flex;
+  flex-direction: column;
+}
+
+.imageone{
+  width: 40%;
+  margin-left: 100px;
+  margin-top: 50px;
+}
+.imagetwo{
+  /* width: 20%; */
+  margin-left: 100px;
+  margin-top: 50px;
+}
+.glavdiv{
+  display: flex;
+}
+.add{
+  width: 60px;
+  height: 30px;
+}
+.delete{
+  width: 50px;
+  height: 50px;
+  font-size: 20px;
+  border: 0;
+  background-color: #FFF9DE;
+}
+.check{
+  width: 50px;
+  height: 50px;
+  font-size: 20px;
+  border: 0;
+  background-color: #FFF9DE;
+}
+.edit{
+  width: 50px;
+  height: 50px;
+  font-size: 20px;
+  border: 0;
+  background-color: #FFF9DE;
+}
+
+.task-card {
+  background-color: #FFF9DE;
+  padding: 20px;
+  margin: 10px 0;
+  border-radius: 10px;
+  width: 65%;
+  max-width: 500px;
+  /* display: flex; */
+  flex-direction: column;
+}
+
+.task-card h1,
+.task-card p {
+  margin: 5px 0;
+}
+
+.task-card button {
+  margin: 5px;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.task-card .delete {
+  background-color: #FFF9DE;
+  color: white;
+}
+
+.task-card .check {
+  background-color: #FFF9DE;
+  color: white;
+}
+
+.task-card .edit {
+  background-color: #FFF9DE;
+  color: white;
+}
