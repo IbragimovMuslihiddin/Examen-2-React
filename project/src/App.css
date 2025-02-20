@@ -1,3 +1,6 @@
+*{
+  /* border: 1px solid red; */
+}
 .modal {
   position: fixed;
   top: 0;
@@ -192,4 +195,85 @@
 .task-card .edit {
   background-color: #FFF9DE;
   color: white;
+}
+
+@media (max-width: 1024px) {
+  .modal-content {
+    width: 50%;
+    max-height: 80vh;
+  }
+}
+
+@media (max-width: 768px) {
+  .glavdiv {
+    flex-direction: column;
+    align-items: center;
+  }
+  .task-card {
+    width: 90%;
+  }
+  .modal-content {
+    width: 70%;
+    max-height: 75vh;
+  }
+  .save{
+    position: relative;
+    left: 1px;
+  }
+  .cancle{
+    position: relative;
+    left: 1px;
+  }
+  .h1Task{
+    position: relative;
+    left: 1px;
+  }
+  .startone{
+    width: 100%;
+  }
+  .h2Task{
+    position: relative;
+    left: 1px;
+  }
+   
+}
+
+@media (max-width: 480px) {
+  .glavdiv {
+    padding: 10px;
+  }
+  .task-card h1 {
+    font-size: 18px;
+  }
+  .task-card p {
+    font-size: 14px;
+  }
+  .modal-content {
+    width: 80%;
+    padding: 15px;
+    max-height: 70vh;
+  }
+  .save{
+    position: relative;
+    left: 1px;
+  }
+  .cancle{
+    position: relative;
+    left: 1px;
+  }
+  .startone{
+    width: 100%;
+  }
+  .h2Task{
+    position: relative;
+    left: 1px;
+  }
+  .title{
+    position: relative;
+    left: 1px;
+  }
+  .Des{
+    position: relative;
+    left: 1px;
+  }
 }

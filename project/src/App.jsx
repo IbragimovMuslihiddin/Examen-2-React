@@ -8,7 +8,7 @@ const App = () => {
     {
       task: "The first task title",
       id: 1,
-      child: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sit amet euismod nulla.",
+      child: "Lorem ipsum dolor sit amet, consectetur adipcing elit. Maur sit amet eumod nulla.",
       status: false,
     },
   ]);
@@ -17,8 +17,8 @@ const App = () => {
   const [editId, setEditId] = useState(null);
   const [editText, setEditText] = useState("");
   const [editChildText, setEditChildText] = useState("");
-  const [isModalOpen, setIsModalOpen] = useState(false);
-  const [isAddModalOpen, setIsAddModalOpen] = useState(false);
+  const [ModalOpen, setModalOpen] = useState(false);
+  const [AddModalOpen, setAddModalOpen] = useState(false);
 
   function addTodo() {
     let newUser = {
@@ -30,7 +30,7 @@ const App = () => {
     setData([...data, newUser]);
     setText("");
     setChildText("");
-    setIsAddModalOpen(false);
+    setAddModalOpen(false);
   }
 
   function deleteUser(id) {
@@ -54,7 +54,7 @@ const App = () => {
     setEditId(id);
     setEditText(task);
     setEditChildText(child);
-    setIsModalOpen(true);
+    setModalOpen(true);
   }
 
   function saveEdit() {
@@ -68,13 +68,13 @@ const App = () => {
     setEditId(null);
     setEditText("");
     setEditChildText("");
-    setIsModalOpen(false);
+    setModalOpen(false);
   }
 
   return (
     <>
     <div className="glavdiv">
-        <button className="add" onClick={() => setIsAddModalOpen(true)}>ADD +</button>
+        <button className="add" onClick={() => setAddModalOpen(true)}>ADD +</button>
       <div className="startone">
          <img className="imageone" src={todo} alt="" />
          <img className="imagetwo" src={group} alt="" />
@@ -92,7 +92,7 @@ const App = () => {
 ))}
       </div>
 
-      {isAddModalOpen && (
+      {AddModalOpen && (
         <div className="modal">
           <div className="modal-content">
             <h2 className="h1Task">Add New Task</h2>
@@ -101,12 +101,12 @@ const App = () => {
             <p className="Des">Description</p>
             <input className="inputtwo" value={childText} onChange={(e) => setChildText(e.target.value)} placeholder="Enter description" /> <br/>
             <button className="save" onClick={addTodo}>Save</button>
-            <button className="cancle" onClick={() => setIsAddModalOpen(false)}>Cancel</button>
+            <button className="cancle" onClick={() => setAddModalOpen(false)}>Cancel</button>
           </div>
         </div>
       )}
 
-      {isModalOpen && (
+      {ModalOpen && (
         <div className="modal">
           <div className="modal-content">
             <h2 className="h2Task">Task</h2>
@@ -115,7 +115,7 @@ const App = () => {
             <p className="Des">Description</p>
             <input className="inputtwo" value={editChildText} onChange={(e) => setEditChildText(e.target.value)} placeholder="Edit description" /> <br/>
             <button className="save" onClick={saveEdit}>Save</button>
-            <button className="cancle" onClick={() => setIsModalOpen(false)}>Cancel</button>
+            <button className="cancle" onClick={() => setModalOpen(false)}>Cancel</button>
           </div>
         </div>
       )}
